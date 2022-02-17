@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giger</title>
     <link rel="icon" href="giger.png" />
-</head>
-
-<body>
-    
     <style>
         @keyframes spin {
             to {
@@ -21,11 +17,22 @@
         .animate-spin {
             animation: spin 5s linear infinite;
         }
+        @keyframes nspin {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
         
+        .notspin {
+            animation: nspin 5s linear infinite;
+        }
         body {
             background-color: #5865F2;
         }
     </style>
+</head>
+
+<body class="notspin">
     <a href="https://www.instagram.com/gigerthefatass">
     <img src="giger.png" class="animate-spin" width="420" height="420">
     <img src="giger1.png" class="animate-spin" width="420" height="420">
