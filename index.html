@@ -8,6 +8,11 @@
     <title>Giger</title>
     <link rel="icon" href="giger.png" />
     <style>
+        @keyframes bg-gradient {
+                0%{background-position:0% 50%} 
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+        }
         @keyframes spin {
             to {
                 transform: rotate(360deg);
@@ -25,6 +30,10 @@
         
         .notspin {
             animation: nspin 5s linear infinite;
+            background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, indigo, violet);
+            background-size: 10000% 10000%; 
+
+            animation: bg-gradient 45s infinite;
         }
         @keyframes bounce {
             0%, 100% {
@@ -43,19 +52,6 @@
 </head>
 
 <body class="notspin">
-    <style>
-        @keyframes bg-gradient {
-                0%{background-position:0% 50%} 
-                50%{background-position:100% 50%}
-                100%{background-position:0% 50%}
-        }
-        body {
-            background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, indigo, violet);
-            background-size: 10000% 10000%; 
-
-            animation: bg-gradient 45s infinite; 
-        }
-    </style>
     <a href="https://www.instagram.com/gigerthefatass">
     <img src="giger.png" class="animate-spin" width="420" height="420">
     <img src="giger1.png" class="animate-spin" width="420" height="420">
